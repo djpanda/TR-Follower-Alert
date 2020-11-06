@@ -1,14 +1,14 @@
 (async () => {
     
-  const alertVolume = {alertVolume} * .01;
-  const delayTime = {alertDelay};
+  const alertVolume = 50 * .01;
+  const delayTime = 0;
   
   const resources = await NerdLoader.load([
     "https://ext-assets.streamlabs.com/users/140067/gsap-3-5-1.min.js",
     "https://ext-assets.streamlabs.com/users/140067/EasePack-3-5-1.min.js",
     "https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.1/lottie.min.js",
     "https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.0/howler.min.js",
-    { name: "alertSound", url: "{alertSound}" },
+    { name: "alertSound", url: "https://uploads.twitchalerts.com/000/533/735/358/mech-tech-alert-0a.mp3" },
     { name: "lottieData", url: "https://ext-assets.streamlabs.com/users/140067/mech-alert.json" }
   ]);
  
